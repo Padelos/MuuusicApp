@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="#3F51B5"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/songIconActRI"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/music"
+        android:layout_centerVertical="true" />
+
+    <!--android:maxLines="1"
+        android:ellipsize="end"
+        -->
+    <TextView
+        android:id="@+id/songTitlePlayingActRI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/songIconActRI"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        tools:text="Title song"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"/>
+    <TextView
+        android:id="@+id/songDurationActRI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/songIconActRI"
+        android:layout_below="@id/songTitlePlayingActRI"
+        android:textColor="@color/white"
+        android:textAlignment="textEnd"
+        android:padding="3dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="Song duration"
+        />
+
+</RelativeLayout>
